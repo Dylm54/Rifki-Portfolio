@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
+
+h1 {
+  font-family: "M PLUS Rounded 1c" !important;
+  font-weight: "bold";
+}
+
+h2 {
+  font-family: "M PLUS Rounded 1c" !important;
+}
+
+h3 {
+  font-family: "M PLUS Rounded 1c" !important;
+  font-size: 20px !important;
+  line-height: 1.33;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-color: #525252;
+  text-decoration-thickness: 4px;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.reactLink:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.bg-blue {
+  background-color: #81E6D9;
+  color: black;
+  border-radius: 0.35rem;
+}
