@@ -13,7 +13,7 @@ const Layout = ({ children}) => (
         exit="exit" 
         variants={variants} 
         transition={{ duration: 0.4, type: "easeInOut" }}
-        style={{ position: "relative" }}
+        style={{ position: "relative", minHeight: "100vh" }}
     >
         {children}
     </motion.article>

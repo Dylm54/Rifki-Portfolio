@@ -19,6 +19,7 @@ import {
     IoLogoLinkedin,
     IoLogoGithub
 } from "react-icons/io5";
+import { FaMedium } from "react-icons/fa6";
 import Footer from "./footer";
 import { Link } from "react-router-dom";
 import "../style.css";
@@ -135,8 +136,16 @@ const AboutContent = () => {
                                 College Student Majoring in Informatics at Telkom University.
                             </BioSection>
                             <BioSection>
-                                <BioYear>2023 to present</BioYear>
-                                IT Development at IEEE SB Telkom University.
+                                <BioYear>2023</BioYear>
+                                Software Engineer at Advanced Software Engineering Laboratory.
+                            </BioSection>
+                            <BioSection>
+                                <BioYear>2023</BioYear>
+                                Frontend Developer Intern at IEEE Region 10 Young Professionals.
+                            </BioSection>
+                            <BioSection>
+                                <BioYear>2024 to present</BioYear>
+                                Head of IT Department at IEEE SB Telkom University.
                             </BioSection>
                         </motion.div>
                         <motion.div
@@ -153,7 +162,7 @@ const AboutContent = () => {
                                 style={{
                                     color: colorMode === "dark" ? "#ff63c3" : "rgb(61, 122, 237)",
                                 }}
-                            >Playing Games</Link>, Art, Movie
+                            >Playing Games</Link>, Art, Movie, Singing, Travelling
                             </Paragraph>
                         </motion.div>
                         <motion.div
@@ -203,6 +212,20 @@ const AboutContent = () => {
                                             leftIcon={<Icon as={IoLogoGithub} />}
                                         >
                                             @Dylm54
+                                        </Button>
+                                    </Link>
+                                </ListItem>
+                                <ListItem>
+                                    <Link
+                                        to="https://medium.com/@rifki.hdyth"
+                                        target="_blank"
+                                    >
+                                        <Button
+                                            variant="ghost"
+                                            colorScheme="teal"
+                                            leftIcon={<FaMedium />}
+                                        >
+                                            @rifki.hdyth
                                         </Button>
                                     </Link>
                                 </ListItem>

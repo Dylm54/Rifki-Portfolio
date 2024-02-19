@@ -81,20 +81,6 @@ const Navbar = () => {
           alignItems="center"
           color={colorMode === "dark" ? "alphaWhite.900" : "gray.800"}
         >
-          <Link
-            to="/"            
-            style={{
-              padding: "0.5rem",
-            }}
-          ><Text sx={{
-            "&:hover": {
-              textDecoration: "underline",
-              textUnderlineOffset: "3px"
-            }
-          }}>
-              About
-            </Text>
-          </Link>
           <NavLink
             to="/works"
             className={({ isActive }) => {
@@ -111,6 +97,24 @@ const Navbar = () => {
               }
             }}>
               Works
+            </Text>
+          </NavLink>
+          <NavLink
+            to="/posts"
+            className={({ isActive }) => {
+              return ( isActive ? 'bg-blue': 'nothing')
+            }}
+            style={{
+              padding: "0.5rem",
+            }}
+          >
+            <Text sx={{
+              "&:hover": {
+                textDecoration: "underline",
+                textUnderlineOffset: 3
+              }
+            }}>
+              Posts
             </Text>
           </NavLink>
         </Stack>
@@ -146,17 +150,6 @@ const Navbar = () => {
               <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="options" />
               <MenuList>
                 <Link
-                  to="/"
-                >
-                  <MenuItem sx={{
-                    "&:hover": {
-                      textDecoration: "underline",
-                      textUnderlineOffset: 3
-                    }
-                  }}>
-                    About</MenuItem>
-                </Link>
-                <Link
                   to="/works"
                 >
                   <MenuItem sx={{
@@ -165,6 +158,16 @@ const Navbar = () => {
                       textUnderlineOffset: 3
                     }
                   }}>Works</MenuItem>
+                </Link>
+                <Link
+                  to="/posts"
+                >
+                  <MenuItem sx={{
+                    "&:hover": {
+                      textDecoration: "underline",
+                      textUnderlineOffset: 3
+                    }
+                  }}>Posts</MenuItem>
                 </Link>
               </MenuList>
             </Menu>
