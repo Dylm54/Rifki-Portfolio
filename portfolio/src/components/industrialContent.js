@@ -80,7 +80,7 @@ const WorkIndustrial = () => {
                                 <List ml={4} my={4}>
                                     <ListItem>
                                         <Meta>Website</Meta>
-                                        <Link className="reactLink" target="_blank" to="https://zoapofficial.netlify.app/" style={{
+                                        <Link className="reactLink" target="_blank" to="https://industrial-blond.vercel.app/" style={{
                                             color: colorMode === "dark" ? "#ff63c3" : "rgb(61, 122, 237)",
                                         }}>
                                             https://industrial-blond.vercel.app/ <ExternalLinkIcon mx="2px" />
